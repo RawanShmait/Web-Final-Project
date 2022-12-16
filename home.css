@@ -111,4 +111,23 @@
     padding: 5px;
 }
 
+.all-posts{
+    padding: 20px;
+}
+
+.post{
+    width: 300px;
+}
+
+.post img{
+    object-fit: cover;
+    height: 350px;
+    width: 100%;
+}
+
+.post-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
