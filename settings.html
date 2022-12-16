@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="logo.png" rel="icon">
+    <link rel="stylesheet" href="settings.css">
+
+    <!--for the icons-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <title>Settings</title>
+</head>
+<body>
+    <div class="sidebar">
+
+        <a href="home.html" class="logo">
+            <div class="logo_img">
+                <img src="logo_name.png" alt="">
+            </div>
+        </a>
+
+        <div class="profile">
+            
+            <div class="profile-pic">
+                <img src="profile.png" alt="">
+            </div>
+            
+            <div class="name">
+                <h2>Name</h2>
+            </div>
+            <span class="username">@username</span>
+
+        </div>
+
+        <div class="options">
+
+            <a href="home.html">
+                <span class="icon">
+                    <i class="ri-function-line"></i>
+                </span>
+                <span id="feed-icon">Feed</span>
+            </a>
+
+            <a href="profile.html">
+            <span class="icon">
+                <i class="ri-account-circle-line"></i>
+            </span>
+            <span id="profile-icon">Profile</span>
+            </a>
+
+            <a href="settings.html" class="settings-icon">
+                <span class="icon">
+                    <i class="ri-settings-4-line"></i>
+                </span>
+                <span id="settings-icon">Settings</span>
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="settings-options">
+        <h1>Updating Profile</h1>
+        <button class="editing" id="change-pfp">Change bio</button>
+        <button class="editing" id="change-email">Change email</button>
+        <button class="editing" id="change-name">Change name</button>
+        <button class="editing" id="change-username">Change username</button>
+        <button class="editing" id="change-number">Change phone number</button>
+        <button class="editing" id="change-pfp">Change profile picture</button>
+        <button class="editing" id="change-colormode">Change color mode</button>
+    </div>
+    
+    <div id="choice"></div>
+
+    <button>Submit changes</button>
+
+    <script src="settings.js"></script>
+</body>
+</html>
