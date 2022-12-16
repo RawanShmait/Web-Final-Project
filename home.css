@@ -98,3 +98,17 @@
     background: transparent;
 }
 
+.header-options{
+    display: flex;
+    align-items: center;
+}
+
+.header-options .add{
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 5px;
+}
+
+
