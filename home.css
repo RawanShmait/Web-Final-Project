@@ -82,3 +82,19 @@
     height: 50px;
 }
 
+.search{
+    display:flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    height: 10px;
+    width: 200px;
+}
+
+.search input{
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
