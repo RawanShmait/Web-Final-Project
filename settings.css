@@ -74,3 +74,9 @@
 #settings-icon, #feed-icon:hover, #profile-icon:hover{
     color: #e2336b;
 }
+
+h1{
+    padding-top: 15px;
+    padding-bottom: 50px;
+}
+
