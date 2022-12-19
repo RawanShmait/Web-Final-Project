@@ -26,3 +26,27 @@
     width: 280px;
     height: 60px;
 }
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.profile-pic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    border: 2px solid #e2336b;
+    border-radius: 50%;
+}
+
+.profile-pic img{
+    border-radius: 50%;
+    object-fit: cover;
+    height: 150px;
+    width: 150px;
+}
