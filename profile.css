@@ -74,3 +74,10 @@
 #profile-icon, #feed-icon:hover, #settings-icon:hover{
     color: #e2336b;
 }
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+}
