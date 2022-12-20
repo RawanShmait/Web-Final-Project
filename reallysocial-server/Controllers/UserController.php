@@ -87,7 +87,14 @@ class UserController extends Controller {
         }
     }
 
-    
+    function getComments($pid){
+        $comments=Like::where("post_id", $pid)
+                    ->get();
+        return response()->json([
+            "results"=>$comments
+        ]);
+    }
+
 
 
 
