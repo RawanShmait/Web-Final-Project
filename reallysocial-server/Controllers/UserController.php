@@ -95,6 +95,14 @@ class UserController extends Controller {
         ]);
     }
 
+    function getMyPosts($uid){
+        $my_posts=Post::where("user_id", $uid)
+                    ->get();
+        return response()->json([
+            "results"=>$my_posts
+        ]);
+    }
+
 
 
 
