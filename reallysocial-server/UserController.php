@@ -21,5 +21,29 @@ class UserController extends Controller {
         }
     }
 
+    function logIn(Request $request){
+        $user=User::where("email", $request->email)
+                    ->where("password", bcrypt($request->password))
+                    ->get();
+        if($user){
+            return response()->json([
+                "id"=>$user->id 
+            ]);
+        }
+        else{
+            return response()->json([
+                "id"=>-1
+            ]);
+        }
+    }
+
+    function blockUser($id){
+        $user=User::find($id);
+        $user->is_blocked=1;
+        $user->save();
+        return response()->json([
+            "result"=>true
+        ]);
+    }
 
 }
