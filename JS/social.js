@@ -18,13 +18,9 @@ social_pages.loadFor=(page)=>{
   eval("social_pages.load_" + page + "();");
 };
 
-social_pages.postAPI=async(api_url, api_data, api_token=null)=>{
+social_pages.postAPI=async(api_url, api_data)=>{
   try{
-    return await axios.post(api_url, api_data, {
-      headers: {
-        Authorization: "token " + api_token,
-      },
-    });
+    return await axios.post(api_url, api_data);
   }
   catch(error){
     social_pages.Console("Error from Linking (POST)", error);
@@ -39,3 +35,22 @@ social_pages.getAPI=async(api_url)=>{
     social_pages.Console("Error from Linking (GET)", error);
   }
 };
+
+const submit=document.getElementById("to-home");
+
+submit.addEventListener("click", async function(){
+  const email=document.getElementById("email").value;
+  const password=document.getElementById("password").value;
+  const post_url=base_url+"login";
+  const data={
+    email: email,
+    password: password
+  };
+  const response=await social_pages.postAPI(post_url, data);
+  submit.href="home.html";
+
+  // if(response.data.id!=-1)
+  //   submit.href="home.html";
+  // else
+  //   submit.href="signup.html";
+});
