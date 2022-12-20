@@ -57,3 +57,19 @@ change_email.addEventListener("click", function(){
     change_pfp.style.backgroundColor="#DEBACE";
     change_pfp.style.cssText=":hover{background-color: #e2336b; color: #DEBACE;}";
 });
+
+change_name.addEventListener("click", function(){
+    change_name.style.color="#DEBACE";
+    change_name.style.backgroundColor="#e2336b";
+    change_bio.style.backgroundColor="#DEBACE";
+    change_bio.style.cssText=":hover{background-color: #e2336b; color: #DEBACE;}";
+    change_email.style.backgroundColor="#DEBACE";
+    change_email.style.cssText=":hover{background-color: #e2336b; color: #DEBACE;}";
+    change_username.style.backgroundColor="#DEBACE";
+    change_username.style.cssText=":hover{background-color: #e2336b; color: #DEBACE;}";
+    change_number.style.backgroundColor="#DEBACE";
+    change_number.style.cssText=":hover{background-color: #e2336b; color: #DEBACE;}";
+    change_pfp.style.backgroundColor="#DEBACE";
+    change_pfp.style.cssText=":hover{background-color: #e2336b; color: #DEBACE;}";
+});
+
