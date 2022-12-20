@@ -67,5 +67,28 @@ class UserController extends Controller {
         }
     }
 
+    function getLikes($pid){
+        $likes=Like::where("post_id", $pid)
+                    ->get();
+        return response()->json([
+            "results"=>$likes
+        ]);
+    }
+
+    function commentPost(Request $request, $pid){
+        $comment=new Comment;
+        $comment->post_id=$pid;
+        $comment->user_id=Auth::id();
+        $comment->content=$request->content;
+        if($comment->save()){
+            return response()->json([
+                "result"=>true
+            ]);
+        }
+    }
+
+    
+
+
 
 }
