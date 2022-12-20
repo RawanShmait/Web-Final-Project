@@ -54,5 +54,18 @@ class UserController extends Controller {
         ]);
     }
 
+    function likePost($pid){
+        $like=new Like;
+        $like->post_id=$pid;
+        $like->user_id=Auth::id();
+        $post=Post::where("id", $pid)
+                    ->$post->num_of_likes=$post->num_of_likes+1;
+        if($like->save()){
+            return response()->json([
+                "result"=>true
+            ]);
+        }
+    }
+
 
 }
