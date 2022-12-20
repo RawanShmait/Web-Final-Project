@@ -19,3 +19,26 @@ const setPfp=()=>{
     const pfp=document.querySelector(".profile-pic");
     pfp.innerHTML="<img src='test.png'>";
 }
+
+// const editing_options=document.querySelectorAll(".editing");
+// editing_options.forEach((element)=>{
+//     element.addEventListener("click", function(){
+//         element.style.backgroundColor="#e2336b";
+//         element.style.color="#DEBACE";
+//     });
+// });
+
+change_bio.addEventListener("click", function(){
+    change_bio.style.color="#DEBACE";
+    change_bio.style.backgroundColor="#e2336b";
+    change_email.style.backgroundColor="#DEBACE";
+    change_email.style.cssText=":hover{background-color: #e2336b; color: #DEBACE;}";
+    change_name.style.backgroundColor="#DEBACE";
+    change_name.style.cssText=":hover{background-color: #e2336b; color: #DEBACE;}";
+    change_username.style.backgroundColor="#DEBACE";
+    change_username.style.cssText=":hover{background-color: #e2336b; color: #DEBACE;}";
+    change_number.style.backgroundColor="#DEBACE";
+    change_number.style.cssText=":hover{background-color: #e2336b; color: #DEBACE;}";
+    change_pfp.style.backgroundColor="#DEBACE";
+    change_pfp.style.cssText=":hover{background-color: #e2336b; color: #DEBACE;}";
+});
