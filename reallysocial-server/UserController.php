@@ -46,4 +46,13 @@ class UserController extends Controller {
         ]);
     }
 
+    function searchAccount(Request $request){
+        $users=User::where("username", $request->username)
+                    ->get();
+        return response()->json([
+            "results"=>$users
+        ]);
+    }
+
+
 }
